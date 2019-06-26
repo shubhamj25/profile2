@@ -1,0 +1,321 @@
+body, html{
+height:100%;
+mrgin:0;
+font-size:20px;
+font-family:"Calibri";
+font-weight:400;
+line-height:1.8em;
+color:#666;
+
+}
+
+
+
+.image ,.image1 ,.pimg1 ,.pimg2 ,.pimg3, .pimg4 ,.pimg0{
+position:relative;
+opacity:1.0;
+background-position:center;
+background-size:cover;
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+
+
+.pimg0{
+background-image:url('process.jpeg');
+min-height:635px;
+}
+
+
+.pimg1{
+background-image:url('image1.jpeg');
+min-height:500px;
+
+}
+
+.pimg2{
+background-image:url('image2.jpeg');
+min-height:600px;
+}
+
+.pimg3{
+background-image:url('image3.jpeg');
+min-height:500px;
+}
+
+.pimg4{
+background-image:url('image4.jpeg');
+min-height:300px;
+}
+
+
+.section{
+text-align:center;
+padding:20px 80px;
+}
+
+.section-light{
+background-color:white ;
+color:#black;
+font-size:25px;
+font-weight:bold;
+}
+
+.section-dark{
+background-color:black ;
+color:#E0F2F7;
+font-size:25px;
+font-weight:bold;
+}
+
+.section-trans{
+background:rgb(0,0,0);
+background:rgba(0,0,0,0.8) ;
+color:#E0F2F7;
+font-size:25px;
+font-weight:bold;
+}
+
+.ptext{
+position:absolute;
+top:50%;
+font-family:"Lato" sans serif;
+width:100%;
+text-align:center;
+color:#000;
+font-size:27px;
+letter-spacing:8px;
+letter-transform:uppercase;
+}
+
+
+.ptextimg{
+position:absolute;
+top:20%;
+font-family:"Lato" sans serif;
+width:100%;
+text-align:center;
+color:#000;
+font-size:27px;
+letter-spacing:8px;
+letter-transform:uppercase;
+}
+
+.ptext .border{
+background-color:#111;
+color:#fff;
+padding:20px;
+}
+
+.ptext .border .trans{
+background-color:transparent;
+}
+
+
+
+@media(max-width:568px){
+.pimg1, .pimg2, .pimg3 ,.pimg4 ,.pimg0{
+background-attachment:scroll;
+}
+}
+
+*{box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 100%;
+  height:650px;
+}
+
+.image{
+  display: block;
+  width: 20%;
+  height: auto;
+  position:absolute;
+  image-align:center;
+  left:40%;
+ 
+}
+
+.overlay {
+  position: relative; 
+  top: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container1 {
+  border-radius:50px 20px;
+  position: relative;
+  width: 50%;
+  float:left;
+}
+
+.image1 {
+  border-radius:170px 40px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity:0.9;
+}
+
+.image2 {
+  border-radius:170px 40px 170px 40px;
+  display: block;
+  width: 100%;
+  height: 100%;
+opacity:0.9;
+}
+
+.image3 {
+  border-radius:40px 170px 40px 170px;
+  display: block;
+  width: 100%;
+  height: 100%;
+opacity:0.9;
+}
+
+.image4 {
+  border-radius:40px 170px;
+  display: block;
+  width: 100%;
+  height: 100%;
+opacity:0.9;
+}
+.overlay1 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+ background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.75); /* Black see-through */
+  border-radius:170px 40px;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  line-height: 1.2vw; font-size: 2vw;
+  
+}
+
+.overlay2 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+ background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.75); /* Black see-through */
+  border-radius:170px 40px 170px 40px;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+ line-height: 1.2vw; font-size: 2vw;
+}
+
+.overlay3 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+ background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.75); /* Black see-through */
+  border-radius:40px 170px 40px 170px;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  line-height: 1.2vw; font-size: 2vw;
+}
+
+.overlay4 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+ background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.75); /* Black see-through */
+  border-radius:40px 170px;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+   line-height: 1.2vw;
+   font-size: 2vw;
+}
+
+.container1:hover .overlay1{
+  bottom: 0;
+  height: 100%;
+}
+
+.container1:hover .overlay2{
+  bottom: 0;
+  height: 100%;
+}
+
+.container1:hover .overlay3{
+  bottom: 0;
+  height: 100%;
+}
+
+.container1:hover .overlay4{
+  bottom: 0;
+  height: 100%;
+}
+
+.text1 {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top:40%;
+  left:40%;
+ margin-top:20px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+<HTML><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<BODY BGCOLOR=#C70039  ><style>
+a:link{color:white;text-decoration:none;}
+a:visited{color:white;text-decoration:none;}
+a:hover{color:hotpink;text-decoration:none;}
+a:active{color:#FFC13B;text-decoration:none;}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color:#FF5733  ;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 15px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+<h1><ul><FONT color=white SIZE="5" FACE="calibri">
+<b>
+<li><a href="username.exe" target="right">LOGIN APPLICATION</a></li></b><br>
+<b>
+<li><a href="sdetails.html" target="right">PROFILE LOADER & CREATOR</a></li></b><br>
+
+<li><a href="sfees.html" target="right">FEE DETAILS</a></li></b><br>
+<b>
+<li><a href="smarks.html" target="right">EXAM MARKS</a></li></b><br>
+<b>
+<li><a href="UG-IIb.xls" target="right">ACADEMIC SCHEDULE</li></b></font></ul>
+<b>
+<button class="button" style="vertical-align:middle"><FONT color=white SIZE="5" FACE="calibri">
+<a href="blank.html" onclick="location.href='logout.exe';" target="right"><span>LOG OUT</span></a></font></button></b>
+<b>
+<button class="button" style="vertical-align:middle" >
+<FONT color=white SIZE="5" FACE="calibri"><span><a href="intro.html" target="right">BACK TO HOME</a></span></font></button></b>
+</h1>
+</body>
+</html>
